@@ -1,0 +1,8 @@
+[submodule "simple-crud/src/base"]
+	path = simple-crud/src/base
+	url = https://github.com/SharjeelBaig0508/Node-JS-Backend-Project.git
+	branch = dev
+# [submodule "api-gateway/src/base"]
+# 	path = api-gateway/src/base
+# 	url = https://github.com/SharjeelBaig0508/Node-JS-Backend-Project.git
+# 	branch = redis

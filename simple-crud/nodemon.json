@@ -1,0 +1,13 @@
+{
+    "verbose": true,
+    "ignore": [
+        "./build/**",
+        "*.log"
+    ],
+    "watch": [
+        "./**"
+    ],
+    "execMap": {
+        "ts": "node --es-module-specifier-resolution=node --inspect=0.0.0.0:9229 --nolazy --loader ts-node/esm "
+    }
+}

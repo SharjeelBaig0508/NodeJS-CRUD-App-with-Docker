@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  simple-crud:
+    container_name: "simple-crud"
+    build:
+      context: "."
+      dockerfile: "./simple-crud/DockerFile"
+    ports:
+      - 3100:8080
+    volumes:
+      - ./simple-crud:/usr/src
+  simple-crud-db:
+    container_name: "simple-crud-db"
+    image: 'mongo'
+    environment:
+      - MONGO_INITDB_DATABASE=admin
+      - MONGO_INITDB_ROOT_USERNAME="root"
+      - MONGO_INITDB_ROOT_PASSWORD="root"
+    volumes:
+      - ./simple-crud/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - simple-crud-db-vol:/data/db
+    ports:
+      - 3200:27017
+
+volumes:
+  simple-crud-db-vol:
