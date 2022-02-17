@@ -6,6 +6,8 @@ services:
     build:
       context: "."
       dockerfile: "./simple-crud/DockerFile"
+    depends_on:
+      - simple-crud-db
     ports:
       - 3100:8080
     volumes:
