@@ -1,15 +1,18 @@
 {
-    "server": {
-      "host": "127.0.0.1",
-      "port": 8080
-    },
-    "database": {
-      "uri": "mongodb://simple-crud-db",
-      "options": {
-          "user": "root",
-          "pass": "root",
-          "authSource": "admin",
-          "dbName": "simple-crud"
-      }
+  "default": {
+    "saltWorkFactor": 10
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8080
+  },
+  "database": {
+    "uri": "mongodb://simple-crud-db",
+    "options": {
+        "user": "root",
+        "pass": "root",
+        "authSource": "admin",
+        "dbName": "simple-crud"
     }
   }
+}
