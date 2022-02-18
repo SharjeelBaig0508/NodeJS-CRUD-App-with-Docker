@@ -6,7 +6,12 @@ const log = logger({
     base: {
         pid: false
     },
-    timestamp: () => `,"time":"${dayjs().format()}"`
-});
+    timestamp: () => `,"time":"${dayjs().format()}"`},
+    logger.destination({
+        dest: './system-logs.log',
+        minLength: 4096,
+        sync: false
+    })
+);
 
 export default log;
