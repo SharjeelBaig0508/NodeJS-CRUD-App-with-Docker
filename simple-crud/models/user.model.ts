@@ -1,7 +1,6 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 import config from 'config';
-import { unknown } from 'zod';
 
 export interface UserInput {
     email: string;

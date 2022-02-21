@@ -2,6 +2,31 @@
   "default": {
     "saltWorkFactor": 10
   },
+  "jwt": {
+    "accessTokenTTL": "15m",
+    "refreshTokenTTL": "1y",
+    "publicKey": ["-----BEGIN PUBLIC KEY-----",
+    "MIGeMA0GCSqGSIb3DQEBAQUAA4GMADCBiAKBgHqSHInxp+0POCwFPfL/BCysK136",
+    "456NSRO/2OZbJ8d6x7IXeNzgNt46QazXWP71sudTH6vgI3vCME6ecjZQeNL0/5BT",
+    "iIbmS+rPElXZYEPCI43KKAa1pgnsb0i4gJr7ET0PWdareJiIcc325SAtRscSy/a6",
+    "BDcXCNeRIMqWoxqLAgMBAAE=",
+    "-----END PUBLIC KEY-----"],
+    "privateKey": ["-----BEGIN RSA PRIVATE KEY-----",
+    "MIICWwIBAAKBgHqSHInxp+0POCwFPfL/BCysK136456NSRO/2OZbJ8d6x7IXeNzg",
+    "Nt46QazXWP71sudTH6vgI3vCME6ecjZQeNL0/5BTiIbmS+rPElXZYEPCI43KKAa1",
+    "pgnsb0i4gJr7ET0PWdareJiIcc325SAtRscSy/a6BDcXCNeRIMqWoxqLAgMBAAEC",
+    "gYBhJYM3FfB5pHFp+nGiMds2KPNqVlqoJOUBoTGhSihaI4c5MP9bWN5D/jplan0f",
+    "/s7gJ3LXwBt/kGbHOS/euqM3t6ULXXvMvZ3ZDSUgJzijjE6L/gXS6qrLzPLqEyb0",
+    "DFI2mKqebdzE57Ngrdvknpz5JgVBGiknUf5XAdfb81Ej0QJBAODTPNqX+mCdZIDl",
+    "l8Ljtp4BObGL7XCUVQNez111sr71RsUCn+hHHQqG+wLhO7kAyMgDQeNbcUvdL6tz",
+    "X6BsiQMCQQCLkRV28VsoD/ecc/PhZySl1h91CND7O2tFNCQua4YqpDNPfCXAfdNf",
+    "ywOFrbNnSfO6/Rw9qwwWerfwP+m3af3ZAkEAq0A8GkWpce5xn71C3DCX6cMFLzhm",
+    "pFpYZzjQu1/rx4kNXwOgyk1g0aP/jzIBS+pNBg11IrmEk0ToCrDXJluGAQJAcbp8",
+    "Hzx156N7RoZGSXrfJjPh1mCkytSUiQQAJ8N+xOig1zh3GvBtejXYXOo6swRUFB+F",
+    "D8t+QiMmGCQ8szUvoQJAMpgCXjPRQCHtSXFOd8nT8sx1VafERBKHfMdlRL2NF5yV",
+    "IyLumCYnXXhPvs+OL/LKefb242zdU83PXQiFNOp31Q==",
+    "-----END RSA PRIVATE KEY-----"]
+  },
   "server": {
     "host": "127.0.0.1",
     "port": 8080
