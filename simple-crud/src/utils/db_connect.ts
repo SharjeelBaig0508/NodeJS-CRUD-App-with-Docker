@@ -4,7 +4,7 @@ import logger from './logger';
 
 const connect = async () => {
     const dbURI = config.get<string>('database.uri');
-    const dbOptions = config.get<string>('database.options') as {};
+    const dbOptions = config.get<{}>('database.options');
 
     try {
         await mongoose.connect(dbURI, dbOptions);
