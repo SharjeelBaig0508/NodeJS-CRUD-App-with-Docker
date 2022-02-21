@@ -1,12 +1,12 @@
 import {Express, Request, Response} from 'express';
-import { createUserSessionHandler, getUserSessionHandler, deleteSessionHandler } from './controller/session.controller';
-import { createProductHandler, getProductHandler, updateProductHandler, deleteProductHandler } from './controller/product.controller';
-import { createUserHandler } from './controller/user.controller';
-import requireUser from './middleware/requireUser';
-import validate from './middleware/validateResource';
-import { createProductSchema, updateProductSchema, deleteProductSchema, getProductSchema } from './schema/product.schema';
-import { createSessionSchema } from './schema/session.schema';
-import { createUserSchema } from './schema/user.schema';
+import { createUserSessionHandler, getUserSessionHandler, deleteSessionHandler } from './src/controller/session.controller';
+import { createProductHandler, getProductHandler, updateProductHandler, deleteProductHandler } from './src/controller/product.controller';
+import { createUserHandler } from './src/controller/user.controller';
+import requireUser from './src/middleware/requireUser';
+import validate from './src/middleware/validateResource';
+import { createProductSchema, updateProductSchema, deleteProductSchema, getProductSchema } from './src/schema/product.schema';
+import { createSessionSchema } from './src/schema/session.schema';
+import { createUserSchema } from './src/schema/user.schema';
 
 const routes = (app: Express) => {
     // Base

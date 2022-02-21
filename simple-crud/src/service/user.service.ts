@@ -2,7 +2,6 @@ import { FilterQuery } from "mongoose";
 import pkg from 'lodash';
 const { omit } = pkg;
 import UserModel, { UserDocument, UserInput } from '../models/user.model';
-import mongoose from 'mongoose';
 
 export async function createUser(input: UserInput) {
     try{

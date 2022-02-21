@@ -2,10 +2,10 @@ import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 dotenv.config();
 import config from "config";
-import connect from "./utils/db_connect";
-import logger from "./utils/logger";
+import connect from "./src/utils/db_connect";
+import logger from "./src/utils/logger";
 import routes from "./routes";
-import deserializeUser from "./middleware/deserializeUser";
+import deserializeUser from "./src/middleware/deserializeUser";
 
 const host = config.get<number>("server.host");
 const port = config.get<number>("server.port");
